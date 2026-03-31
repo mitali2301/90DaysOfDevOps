@@ -6,7 +6,7 @@ Devops is all about cultural transformation where we are going to bring "The dev
 
 Why learning Devops and Cloud
 --
-I have a strong interest in the learning cloud platforms and I want to works closely with cloud platforms and automation, so further i can build my career in DevOps and cloud technologies in future.
+Learning DevOps and Cloud automation allows you to build, scale, and deploy software faster and more reliably. Mastering these skills makes you capable of managing the modern infrastructure that powers today's digital world.
 
 End goal 
 ---
