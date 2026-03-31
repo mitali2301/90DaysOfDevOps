@@ -1,9 +1,5 @@
 What is your understanding of DevOps and Cloud Engineering?
-Devops is all about cultural transformation where we are going to bring "The development team", "The operation team", "The security team" together to avoid the wall of confusion so that the teams will have a better collaboration in the company to deliver the software to the customer.
-
-DevOps is a culture that brings teams together to build, test, and deploy high-quality software faster.
-
-It aims to shorten development cycles, improves application reliablility and enable continuous delivery of value to customers.
+Devops is all about cultural transformation where we are going to bring "The development team", "The operation team", "The security team" together to avoid the wall of confusion so that the teams will have a better collaboration in the company to deliver the software to the customer.DevOps is a culture that brings teams together to build, test, and deploy high-quality software faster.It aims to shorten development cycles, improves application reliablility and enable continuous delivery of value to customers.
 
 Why learning Devops and Cloud
 I have a strong interest in the cloud side. DevOps works closely with cloud platforms and automation, so I want to grow my career in DevOps and cloud technologies.
