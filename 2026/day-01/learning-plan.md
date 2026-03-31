@@ -13,5 +13,5 @@ I have 2.7 years of experience.
 Core DevOps skills and next 90 days:
 Deploy a production-grade application on Kubernetes. Learn and troubleshoot Kubernetes. Master networking locally and at cloud level. Master Docker file writing.
 
-Weekly Time :
+Weekly Time : 
 2-3 hours daily
