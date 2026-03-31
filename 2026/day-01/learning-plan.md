@@ -10,7 +10,7 @@ I have a strong interest in the learning cloud platforms and I want to works clo
 
 End goal 
 ---
-At the end of the course I want to gain technical and pratical skills in devops and cloud as well.
+At the end of the course I want to gain technical and practical skills in devops and cloud.
 
 Current level 
 -----
