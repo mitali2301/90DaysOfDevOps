@@ -28,6 +28,22 @@ cp = to copy the file
 mv = to rename/move the file to the another folder
 
 Linux process Management 
+---
+In linux Process Management is the way the operating system allocates resources  to the programs you run. Every time you execute a command, the system creates a "process"
+
+Process Managment commands 
+---
+Top = Display the sorted information of the process
+
+htop = Display the sorted information of the process with visual highlights
+
+ps= shows the process status
+
+kill = Terminate the process with its specific PID
+
+Sytemd = system demon which means anything which runs in background
+
+
 
 
 
