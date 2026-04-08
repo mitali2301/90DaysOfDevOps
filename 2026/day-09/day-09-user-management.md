@@ -81,8 +81,6 @@ Check share access
 sudo -u tokyo 
 touch /opt/dev-project/tokyo.txt
 
-sudo -u
-berlin touch /opt/dev-project/berlin.txt
 
 
 
