@@ -3,13 +3,43 @@
 ## Task
 Today's goal is to **deploy a real web server on the cloud** and learn practical server management.
 
+
 You will:
-- Launch a cloud instance (AWS EC2 or Utho)
-- Connect via SSH
-- Install Nginx
-- Configure security groups for web access (port 80 by default for nginx)
+- Launch a cloud instance (AWS EC2 )
+- Launched an ec2 instances on aws
+- 
+- <img width="1349" height="364" alt="image" src="https://github.com/user-attachments/assets/e6b2f699-4715-4025-87db-66f498bcc8cd" />
+ 
+Connect via SSH
+  
+  <img width="1107" height="509" alt="image" src="https://github.com/user-attachments/assets/f0013c49-96b5-429f-a015-907871e30fc5" />
+
+update the system 
+sudo apt update && sudo apt upgrade -y
+
+- <img width="871" height="271" alt="image" src="https://github.com/user-attachments/assets/533ad1b9-8b84-436e-b630-11953669207b" />
+
+Install nginx
+<img width="1349" height="676" alt="image" src="https://github.com/user-attachments/assets/19b5eacf-9817-4bc6-a6c9-e21ea466e0e3" />
+
+systemctl install nginx -y
+systemctl is-enable nginx.service 
+systemctl status nginx.service 
+
+-
+- Configure security groups for web access (port 80 by default for nginx)<img width="1068" height="254" alt="image" src="https://github.com/user-attachments/assets/4d33061e-2bb9-4cc2-a63f-b8b6c0e8c8b8" />
+
+
+- 
+- 
+- <img width="1068" height="254" alt="image" src="https://github.com/user-attachments/assets/b8da5dd0-6611-4200-88be-51dba3da2ada" />
+
+- 
 - Extract and save logs to a file
+- 
+- 
 - Verify your webpage is accessible from the internet
+- 
 
 This is real DevOps work - exactly what you'll do in production.
 
