@@ -59,66 +59,106 @@ ip addr show = command used in linux to check your IP address
 --
 
  Difference between **public** and **private** IPs — give one example of each
- | private IP| public IP |
-|------|-------------|-
-| /24  | ?           | 
-| /16  | ?          | 
-| /28  |            |
+
+| Public IP | Private IP  |
+|------|---------|
+| Used on public Internet    | used with LAN or network |
+| Recognized over internet   | Not recognized over internet      |
+| Free of charge   | cost associated with its uses      |
+| used in private network for internal communication | used in communication over internet     |
+| 172.217.12.14 (Google) | 192.168.1.15   |
 
  
  
 4. What are the private IP ranges?
-   - `10.x.x.x`, `172.16.x.x – 172.31.x.x`, `192.168.x.x`
-5. Run: `ip addr show` — identify which of your IPs are private
+   10.x.x.x  used in Huge Enterprises / Clouds
+   
+   172.16.x.x – 172.31.x.x  used in Mid-size corps / Virtualization
 
----
+   192.168.x.x -  Home Wi-Fi / Small Offices
+   
+ip addr show  identify which of your IPs are private
 
-### Task 3: CIDR & Subnetting
+private Ip -  172.31.47.255
+--
+<img width="659" height="224" alt="image" src="https://github.com/user-attachments/assets/9cc6882c-7063-472f-b9a9-03622ecc9443" />
+
+
+ CIDR & Subnetting
+ --
 1. What does `/24` mean in `192.168.1.0/24`?
-2. How many usable hosts in a `/24`? A `/16`? A `/28`?
-3. Explain in your own words: why do we subnet?
-4. Quick exercise — fill in:
+
+/24 is called CIDR notation classless inter domain routing. It tells you exactly how much of the IP address belongs to the Network and how much is available for Hosts (devices).
+
+ How many usable hosts in a `/24`? A `/16`? A `/28`?
+  /24  254 
+  
+  /28 = 14
+  
+  /16 = 65,534
+  
+4. Explain in your own words: why do we subnet?
+
+is the process of dividing a large physical network into smaller, manageable logical subnetworks (subnets) to improve performance, security, and IP address efficiency
+
+6. Quick exercise — fill in:
 
 | CIDR | Subnet Mask | Total IPs | Usable Hosts |
 |------|-------------|-----------|--------------|
-| /24  | ?           | ?         | ?            |
-| /16  | ?           | ?         | ?            |
-| /28  | ?           | ?         | ?            |
+| /24  | 255.255.255.0          |  256        |  254      |
+| /16  | 255.255.0.0   |  65,536    | 65.534      |
+| /28  | 255.255.255.240     |  16       |  14         |
 
----
 
-### Task 4: Ports – The Doors to Services
+ Ports – The Doors to Services
+ 
 1. What is a port? Why do we need them?
-2. Document these common ports:
+
+A port is a 16-bit number (ranging from 0 to 65535) used by the Transport Layer (Layer 4) to identify a specific process or service on a device.
+
+3. Document these common ports:
 
 | Port | Service |
 |------|---------|
-| 22   | ?       |
-| 80   | ?       |
-| 443  | ?       |
-| 53   | ?       |
-| 3306 | ?       |
-| 6379 | ?       |
-| 27017| ?       |
+| 22   | SSH     |
+| 80   | HTTP      |
+| 443  | HTTPS      |
+| 53   | DNS     |
+| 3306 | MYSQL     |
+| 6379 | REDIS     |
+| 27017| MongoDB       |
 
 3. Run `ss -tulpn` — match at least 2 listening ports to their services
 
+Two service are there port 80 and 22
+
+<img width="1267" height="330" alt="image" src="https://github.com/user-attachments/assets/b7d698ad-a6df-4901-9402-b664000ce18d" />
+
+
+
+
+- You run `curl http://myapp.com:8080`
+
+- protocol http:// - tell curl to use hypertext transfer protocol
+
+host myapp.com = curl first contacts your DNS resolver to find the A Record (IPv4) or AAAA Record (IPv6) for this domain.
+
+The Port (:8080): By default, HTTP uses Port 80. By adding :8080, you are telling the computer to send the packet to a specific custom service (like a Java, Node.js, or Python app) 
+
+--
+  
+Your app can't reach a database at `10.0.1.50:3306` — what would you check first?
+
+ping to check network connectivity
+
+ is port 3306 open
+
+ss -tulpn | grep :3306
+
+
 ---
 
-### Task 5: Putting It Together
-Answer in 2–3 lines each:
-- You run `curl http://myapp.com:8080` — what networking concepts from today are involved?
-- Your app can't reach a database at `10.0.1.50:3306` — what would you check first?
 
----
 
-## Documentation
 
-Create `day-15-networking-concepts.md` with:
-- Your answers to each task
-- Command outputs from `dig` and `ss`
-- The filled CIDR table
-- What you learned (3 key points)
-
----
 
