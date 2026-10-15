@@ -99,14 +99,22 @@ Create `server_check.sh` that:
 3. If `y` — runs `systemctl status <service>` and prints whether it's **active** or **not**
 4. If `n` — prints "Skipped."
 
+   <img width="894" height="492" alt="image" src="https://github.com/user-attachments/assets/7262ee52-4ddc-49c2-8d9a-a0190b65c1a9" />
+
+
+
 ---
 What I learned 
 
-- Shebang: `#!/bin/bash` tells the system which interpreter to use
-- Variables: `NAME="Shubham"` (no spaces around `=`)
-- Read: `read -p "Enter name: " NAME`
-- If syntax: `if [ condition ]; then ... elif ... else ... fi`
-- File check: `if [ -f filename ]; then`
+- Shebang: `#!/bin/bash`  = tells the system which interpreter to use
+  
+- Variables:  are used to store data `NAME="value "` (no spaces around `=`)
+ 
+- Read: `read -p "Enter name: " NAME`  is used to take output from the user
+  
+- If syntax: `if [ condition ]; then ... elif ... else ... fi` 
+  
+- File check: `if [ -f filename ]; then` = is used to check the file in system if its present or not
 
 ---
 
