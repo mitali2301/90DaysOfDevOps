@@ -10,6 +10,30 @@ Your script should:
 2. Exit with a clear error message if no argument is provided
 3. Exit with a clear error message if the file doesn't exist
 
+
+#!/bin/bash
+
+# Exit on error, unset variables, and pipe failures
+set -euo pipefail
+
+# 1. Check if a log file argument was provided
+if [ -z "${1:-}" ]; then
+    echo "Error: No log file provided."
+    echo "Usage: $0 /path/to/logfile.log"
+    exit 1
+fi
+
+LOG_FILE="$1"
+
+# 2. Check if the file exists and is a regular file
+if [ ! -f "$LOG_FILE" ]; then
+    echo "Error: File '$LOG_FILE' does not exist or is not a valid file."
+    exit 1
+fi
+
+echo "Success: Log file '$LOG_FILE' found and validated."
+
+
 ---
 
 ### Task 2: Error Count
