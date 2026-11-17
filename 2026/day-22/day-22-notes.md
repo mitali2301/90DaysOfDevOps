@@ -1,99 +1,74 @@
 # Day 22 – Introduction to Git: Your First Repository
 
 
-You will:
-- Understand what Git is and why it matters
-- Set up your first Git repository from scratch
-- Start building a living document of Git commands
-
----
-
-## Expected Output
-- A local Git repository with a clean commit history
-- A file called `git-commands.md` that you will keep updating in future days
-- A file called `day-22-notes.md` with your answers
-
----
-
-## Challenge Tasks
 
 ### Task 1: Install and Configure Git
-1. Verify Git is installed on your machine
-2. Set up your Git identity — name and email
-3. Verify your configuration
+
+1. Verify Git is installed on your machine using git --version command 
+
+   <img width="614" height="66" alt="image" src="https://github.com/user-attachments/assets/5f731c3e-e1da-40cd-90b1-be9c72c161d6" />
+
+3. Set up your Git identity — name and email
+git config --global user.name "mitalimokal"
+
+git config --global user.email "mitalimokal50@gmail.com"
+
+
+<img width="1001" height="206" alt="image" src="https://github.com/user-attachments/assets/eef0049b-e96f-4c3c-9f34-ad6707b4f3da" />
+
+5. Verify your configuration
+
+ git config --list command to check the details
 
 ---
 
 ### Task 2: Create Your Git Project
 1. Create a new folder called `devops-git-practice`
-2. Initialize it as a Git repository
-3. Check the status — read and understand what Git is telling you
-4. Explore the hidden `.git/` directory — look at what's inside
+ 
+  mkdir devops-git-pratice
+ <img width="576" height="46" alt="image" src="https://github.com/user-attachments/assets/e661e665-1917-40dc-9e7d-d54cde35d2f8" />
 
----
+ Initialize it as a Git repository
+ 
+ <img width="996" height="240" alt="image" src="https://github.com/user-attachments/assets/eec36477-e7d6-43b2-9680-fbcbcacda8ec" />
 
-### Task 3: Create Your Git Commands Reference
-1. Create a file called `git-commands.md` inside the repo
-2. Add the Git commands you've used so far, organized by category:
-   - **Setup & Config**
-   - **Basic Workflow**
-   - **Viewing Changes**
-3. For each command, write:
-   - What it does (1 line)
-   - An example of how to use it
+ The git init =  command creates a new, empty Git repository or reinitializes an existing one in your current directory.
+
+ Explore the hidden `.git/` directory — look at what's inside
+ 
+When you run git init, Git creates this folder in the root of your project. It contains all the metadata, configuration files, object databases, and references that Git needs to track your project's history.
+
+ <img width="683" height="126" alt="image" src="https://github.com/user-attachments/assets/fec0fc97-b45f-4044-b150-7fadd47e07f0" />
+
 
 ---
 
 ### Task 4: Stage and Commit
 1. Stage your file
-2. Check what's staged
-3. Commit with a meaningful message
-4. View your commit history
+
+touch mitali.txt 
+
+git add mitali.txt 
+
+ Check what's staged
+
+ git status 
+
+ Commit with a meaningful message
+ 
+ Save the staged snapshot permanently to the repository history using a clear, imperative message
+
+ git commit -a "add your file to it"
+
+View your commit history
+
+git log 
+
+<img width="1002" height="431" alt="image" src="https://github.com/user-attachments/assets/9c442781-248f-44c1-b8e6-7c4f159e47ef" />
 
 ---
 
-### Task 5: Make More Changes and Build History
-1. Edit `git-commands.md` — add more commands as you discover them
-2. Check what changed since your last commit
-3. Stage and commit again with a different, descriptive message
-4. Repeat this process at least **3 times** so you have multiple commits in your history
-5. View the full history in a compact format
 
----
 
-### Task 6: Understand the Git Workflow
-Answer these questions in your own words (add them to a `day-22-notes.md` file):
-1. What is the difference between `git add` and `git commit`?
-2. What does the **staging area** do? Why doesn't Git just commit directly?
-3. What information does `git log` show you?
-4. What is the `.git/` folder and what happens if you delete it?
-5. What is the difference between a **working directory**, **staging area**, and **repository**?
 
----
 
-## Ongoing Task
-
-**Keep updating `git-commands.md` every day** as you learn new Git commands in the upcoming days. This will become your personal Git reference. Maintain a clean commit history — one commit per update with a clear message.
-
----
-
-## Hints
-- All you need today are about 8-10 Git commands — Google them, try them, break things
-- Read what `git status` tells you — it's your best friend
-- Use `man git-<command>` or `git <command> --help` to explore
-
----
-
-## Submission
-1. Share a screenshot of your `git log --oneline` output showing multiple commits
-2. Add your `day-22-notes.md` to `2026/day-22/`
-3. Commit and push to your fork
-4. Add your submission for Community Builder of the week on discord
----
-
-Share your first Git repo and commit history on LinkedIn.
-
-`#90DaysOfDevOps` `#DevOpsKaJosh` `#TrainWithShubham`
-
-Happy Learning!
-**TrainWithShubham**
