@@ -4,23 +4,16 @@
 
 Now that you know how to create repos, stage, and commit — it's time to learn the most powerful concept in Git: **branching**. Branches let you work on features, fixes, and experiments in isolation without breaking your main code. You'll also push your work to GitHub for the first time.
 
----
 
-## Expected Output
-- A markdown file: `day-23-notes.md` with your answers
-- Continue updating `git-commands.md` in your `devops-git-practice` repo
-- Your practice repo pushed to GitHub
 
----
-
-## Challenge Tasks
 
 ### Task 1: Understanding Branches
 Answer these in your `day-23-notes.md`:
 1. What is a branch in Git?
 2. Why do we use branches instead of committing everything to `main`?
 3. What is `HEAD` in Git?
-4. What happens to your files when you switch branches?
+  it will show latest commit in the files
+5. What happens to your files when you switch branches?
 
 ---
 
